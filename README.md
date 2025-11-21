@@ -32,12 +32,19 @@ deployment-and-devops-essentials-festuskyalomutua/
 ├── server/                 # Node.js backend
 
 │   ├── config/             # Config files (DB connection, environment)
+
 │   ├── controllers/        # Route controllers
+
 │   ├── middleware/         # Custom middleware
+
 │   ├── models/             # Mongoose models
+
 │   ├── routes/             # API routes
+
 │   ├── uploads/            # Uploaded files (if any)
+
 │   ├── package.json
+
 │   └── server.js
 
 ├── README.md               # Project documentation
