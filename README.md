@@ -1,77 +1,135 @@
-# Deployment and DevOps for MERN Applications
+Deployment and DevOps Essentials - MERN Application
+Overview
 
-This assignment focuses on deploying a full MERN stack application to production, implementing CI/CD pipelines, and setting up monitoring for your application.
+This project demonstrates deployment and DevOps practices for a MERN (MongoDB, Express, React, Node.js) application. It includes best practices for deploying a full-stack app, managing server environments, and ensuring smooth development-to-production workflows.
 
-## Assignment Overview
+The backend is a Node.js/Express server, and the frontend is a React client application.
 
-You will:
-1. Prepare your MERN application for production deployment
-2. Deploy the backend to a cloud platform
-3. Deploy the frontend to a static hosting service
-4. Set up CI/CD pipelines with GitHub Actions
-5. Implement monitoring and maintenance strategies
+Features
 
-## Getting Started
+Full-stack MERN application setup
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Follow the setup instructions in the `Week7-Assignment.md` file
-4. Use the provided templates and configuration files as a starting point
+RESTful API with Express and MongoDB
 
-## Files Included
+React frontend with modern component structure
 
-- `Week7-Assignment.md`: Detailed assignment instructions
-- `.github/workflows/`: GitHub Actions workflow templates
-- `deployment/`: Deployment configuration files and scripts
-- `.env.example`: Example environment variable templates
-- `monitoring/`: Monitoring configuration examples
+Deployment-ready configuration
 
-## Requirements
+Environment variable management with .env
 
-- A completed MERN stack application from previous weeks
-- Accounts on the following services:
-  - GitHub
-  - MongoDB Atlas
-  - Render, Railway, or Heroku (for backend)
-  - Vercel, Netlify, or GitHub Pages (for frontend)
-- Basic understanding of CI/CD concepts
+DevOps essentials: version control, build scripts, and testing
 
-## Deployment Platforms
+Project Structure
+deployment-and-devops-essentials-festuskyalomutua/
+├── client/                 # React frontend
+│   ├── public/
+│   ├── src/
+│   └── package.json
+├── server/                 # Node.js backend
+│   ├── config/             # Config files (DB connection, environment)
+│   ├── controllers/        # Route controllers
+│   ├── middleware/         # Custom middleware
+│   ├── models/             # Mongoose models
+│   ├── routes/             # API routes
+│   ├── uploads/            # Uploaded files (if any)
+│   ├── package.json
+│   └── server.js
+├── README.md               # Project documentation
+└── WeekX-Assignment.md     # Assignment instructions
 
-### Backend Deployment Options
-- **Render**: Easy to use, free tier available
-- **Railway**: Developer-friendly, generous free tier
-- **Heroku**: Well-established, extensive documentation
+Getting Started
+Prerequisites
 
-### Frontend Deployment Options
-- **Vercel**: Optimized for React apps, easy integration
-- **Netlify**: Great for static sites, good CI/CD
-- **GitHub Pages**: Free, integrated with GitHub
+Node.js (v18 or higher)
 
-## CI/CD Pipeline
+npm or yarn
 
-The assignment includes templates for setting up GitHub Actions workflows:
-- `frontend-ci.yml`: Tests and builds the React application
-- `backend-ci.yml`: Tests the Express.js backend
-- `frontend-cd.yml`: Deploys the frontend to your chosen platform
-- `backend-cd.yml`: Deploys the backend to your chosen platform
+MongoDB (local or Atlas)
 
-## Submission
+Git
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+Installation
 
-1. Complete all deployment tasks
-2. Set up CI/CD pipelines with GitHub Actions
-3. Deploy both frontend and backend to production
-4. Document your deployment process in the README.md
-5. Include screenshots of your CI/CD pipeline in action
-6. Add URLs to your deployed applications
+Clone the repository:
 
-## Resources
+git clone https://github.com/PLP-MERN-Stack-Development/deployment-and-devops-essentials-festuskyalomutua.git
+cd deployment-and-devops-essentials-festuskyalomutua
 
-- [GitHub Actions Documentation](https://docs.github.com/en/actions)
-- [MongoDB Atlas Documentation](https://docs.atlas.mongodb.com/)
-- [Render Documentation](https://render.com/docs)
-- [Railway Documentation](https://docs.railway.app/)
-- [Vercel Documentation](https://vercel.com/docs)
-- [Netlify Documentation](https://docs.netlify.com/) 
+
+Install server dependencies:
+
+cd server
+npm install
+
+
+Install client dependencies:
+
+cd ../client
+npm install
+
+
+Set up environment variables:
+
+# Create .env in server/
+MONGO_URI=your_mongodb_connection_string
+PORT=5000
+JWT_SECRET=your_jwt_secret
+
+Running the Application
+Server
+cd server
+npm start
+
+Client
+cd client
+npm start
+
+
+Server runs on http://localhost:5000
+
+Client runs on http://localhost:3000
+
+Deployment
+
+The project is structured for deployment on cloud platforms such as Heroku, Render, or Railway.
+
+Build the React client for production:
+
+cd client
+npm run build
+
+
+Serve the build folder with the Express server or a static hosting provider.
+
+DevOps Essentials
+
+Environment variable management for multiple environments (.env, .env.test)
+
+Git version control and branching strategies
+
+Deployment scripts and build automation
+
+Error handling and logging
+
+Testing
+
+Unit, integration, and end-to-end testing can be set up with Jest, Supertest, and Cypress.
+
+Example scripts in package.json:
+
+"scripts": {
+  "test": "jest",
+  "test:unit": "jest --testPathPattern=tests/unit",
+  "test:integration": "jest --testPathPattern=tests/integration",
+  "test:e2e": "cypress open"
+}
+
+Authors
+
+Festus Kyalo Mutua
+
+GitHub: festuskyalomutua
+
+License
+
+This project is for educational purposes and follows the GitHub Classroom assignment guidelines.
