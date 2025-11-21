@@ -49,7 +49,7 @@ deployment-and-devops-essentials-festuskyalomutua/
 
 ├── README.md               # Project documentation
 
-└── WeekX-Assignment.md     # Assignment instructions
+
 
 Getting Started
 Prerequisites
