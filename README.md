@@ -20,7 +20,9 @@ Environment variable management with .env
 DevOps essentials: version control, build scripts, and testing
 
 Project Structure
+
 deployment-and-devops-essentials-festuskyalomutua/
+
 ├── client/                 # React frontend
 │   ├── public/
 │   ├── src/
