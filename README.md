@@ -24,10 +24,13 @@ Project Structure
 deployment-and-devops-essentials-festuskyalomutua/
 
 ├── client/                 # React frontend
+
 │   ├── public/
 │   ├── src/
 │   └── package.json
+
 ├── server/                 # Node.js backend
+
 │   ├── config/             # Config files (DB connection, environment)
 │   ├── controllers/        # Route controllers
 │   ├── middleware/         # Custom middleware
@@ -36,7 +39,9 @@ deployment-and-devops-essentials-festuskyalomutua/
 │   ├── uploads/            # Uploaded files (if any)
 │   ├── package.json
 │   └── server.js
+
 ├── README.md               # Project documentation
+
 └── WeekX-Assignment.md     # Assignment instructions
 
 Getting Started
