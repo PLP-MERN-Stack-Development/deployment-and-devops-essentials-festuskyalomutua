@@ -106,6 +106,8 @@ Client runs on http://localhost:3000
 Deployment
 
 The project is structured for deployment on cloud platforms such as Heroku, Render, or Railway.
+Backend deployed on Render
+Frontend deployed on vercel
 
 Build the React client for production:
 
